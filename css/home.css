@@ -1,0 +1,97 @@
+/* Page Introduction/Title */
+
+.opener {
+  animation: load-in 2s;
+  font-size: 45px;
+}
+
+/* Player Figures */
+
+div {
+  display: flex;
+  flex-direction: row;
+}
+
+figure {
+  animation: load-in 2s;
+}
+
+.left {
+  margin-left: auto;
+}
+
+.right {
+  margin-right: auto;
+}
+
+img, figcaption {
+  width: 140px;
+}
+
+img {
+  border-radius: 100%;
+  box-shadow: black 0px 0px 20px;
+  margin-bottom: 10px;
+}
+
+figcaption {
+  font-size: 14px;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 600px) {
+  /* Player Figures */
+  .center {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  img, figcaption {
+    width: 120px;
+  }
+  figcaption {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* Player Figures */
+  .center {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  img, figcaption {
+    width: 100px;
+  }
+  img {
+    margin-bottom: 7px;
+  }
+  figcaption {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  /* Page Introduction/Title */
+  .opener {
+    font-size: 35px;
+  }
+  /* Player Figures */
+  figure {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .center {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  img, figcaption {
+    width: 70px;
+  }
+  img {
+    margin-bottom: 4px;
+  }
+  figcaption {
+    font-size: 9px;
+  }
+}

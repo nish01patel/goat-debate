@@ -1,0 +1,254 @@
+/* Navigation Bar */
+
+.page-selected {
+  color: black;
+}
+
+/* Page Introduction/Title */
+
+.case, h3 {
+  animation: load-in 0.5s;
+}
+
+.case {
+  font-size: 60px;
+  margin: 0px;
+}
+
+/* Cards */
+
+.container-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.card, img, .view {
+  border-radius: 10%;
+}
+
+.card {
+  background-color: rgba(185, 182, 182, 0.3);
+  box-shadow: black 0px 0px 2px;
+  margin: auto auto 40px auto;
+  padding: 25px 20px 40px 25px;
+  transition: 0.1s;
+}
+
+.accomplishments {
+  animation: load-in 0.5s;
+}
+
+.stats {
+  animation: load-in 1s;
+}
+
+.best-games {
+  animation: load-in 1.5s;
+}
+
+img, .view {
+  border: 1px solid rgb(53, 51, 51);
+}
+
+img {
+  margin-bottom: 20px;
+  opacity: 0.3;
+  width: 260px;
+}
+
+h4 {
+  font-size: 27px;
+  margin: 0px;
+}
+
+button {
+  background: none;
+  cursor: pointer;
+  font-family: 'Muli', 'Verdana', sans-serif;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.view {
+  color: rgb(53, 51, 51);
+  font-size: 25px;
+  transition: 0.2s;
+}
+
+/* Modals */
+
+.modal {
+  align-items: center;
+  animation: load-in 0.4s;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  height: 100%;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.content {
+  background-color: white;
+  border: 4px solid black;
+  box-shadow: white 0px 0px 10px;
+  max-height: 100%;
+  opacity: 1;
+  overflow: auto !important;
+  width: 33%;
+}
+
+.close, h2, .internal-stats, .internal-best-games, .info-accomplishments, .info-stats, .info-best-games, .extra-stats {
+  color: black;
+}
+
+.close, .internal-stats, .internal-best-games {
+  border: 0px;
+}
+
+.close {
+  float: right;
+  font-size: 25px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+h2 {
+  display: block;
+  font-size: 23px;
+  margin-bottom: 15px;
+  margin-top: 40px;
+}
+
+.internal-stats, .internal-best-games {
+  background-color: rgb(235, 235, 235);
+  margin: 0px;
+  width: 100%;
+}
+
+.internal-stats {
+  font-size: 20px;
+  padding: 20px;
+}
+
+.internal-best-games {
+  font-size: 15px;
+  padding: 10px;
+}
+
+.info-accomplishments {
+  list-style-type: circle;
+  text-align: left;
+}
+
+.info-accomplishments li {
+  display: list-item;
+  font-size: 21px;
+  margin-bottom: 3px;
+  margin-left: 35px;
+}
+
+.info-stats, .info-best-games {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.info-stats li {
+  display: inline-block;
+  font-size: 18px;
+  margin: 0px 5px;
+  white-space: nowrap;
+}
+
+.info-stats span {
+  color: rgb(146, 121, 88);
+}
+
+.info-best-games {
+  font-size: 15px;
+  margin: 0px;
+}
+
+.extra-stats {
+  border: 1px solid black;
+  font-size: 15px;
+  margin: 10px 0px;
+}
+
+/* Hover Effects */
+
+@media (hover: hover) {
+  /* Cards */
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  .view:hover {
+    box-shadow: black 0px 0px 8px;
+  }
+  /* Modals */
+  .close:hover {
+    color: rgb(145, 136, 136);
+  }
+  .internal-stats:hover, .internal-best-games:hover {
+    background-color: rgb(216, 216, 216);
+  }
+  .extra-stats:hover {
+    box-shadow: black 0px 0px 5px;
+  }
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 920px) {
+  /* Modals */
+  .content {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 613px) {
+  /* Page Introduction/Title */
+  .case {
+    font-size: 40px;
+  }
+  /* Modals */
+  .content {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  /* Modals */
+  .close {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 19px;
+    margin-bottom: 13px;
+    margin-top: 34px;
+  }
+  .internal-stats {
+    font-size: 17px;
+    padding: 15px;
+  }
+  .internal-best-games {
+    font-size: 13px;
+    padding: 7px;
+  }
+  .info-accomplishments li {
+    font-size: 16px;
+  }
+  .info-stats li {
+    font-size: 15px;
+  }
+  .info-best-games {
+    font-size: 12px;
+  }
+  .extra-stats {
+    font-size: 13px;
+  }
+}
